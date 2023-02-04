@@ -1,0 +1,183 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+body {
+	background-image: url('https://media.discordapp.net/attachments/1008579180075692062/1057162947773861908/Nekzy-Social-Page.png');
+	background-repeat: no-repeat;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
+}
+
+nav {
+	background-color: transparent;
+	position: absolute;
+	top: 10;
+	left: 10px;
+	right: 0;
+	z-index: 2;
+	transition: background-color 0.2s ease-in-out;
+	font-family: 'Chivo Mono', monospace;
+	letter-spacing: 2px;
+
+
+}
+
+nav ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1rem;
+	padding: 1rem;
+	transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+	border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+	color: white;
+	border-bottom: 2px solid white;
+}
+
+nav a:active {
+	transform: translateY(2px);
+	border-bottom: none;
+}
+
+iframe {
+	padding-top: 50px;
+	margin-top: 1px;
+}
+
+
+.logo-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.logo-container img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+
+.logo-container h1 {
+	font-size: 25px;
+	color: #f6f5f4;
+	margin-bottom: 20px;
+}
+
+.buttons-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.buttons-container a {
+	width: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 200px;
+	background-color: transparent;
+	border: 1px solid white;
+	border-radius: 7px;
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+	margin-top: 9px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease-in-out;
+}
+
+.buttons-container i {
+	margin-right: 10px;
+}
+
+
+.buttons-container a:hover {
+	transform: scale(1.1);
+}
+
+footer {
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #333;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	animation: slide-up 0.5s ease-out;
+}
+
+footer a {
+	color: #f6f5f4;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+@keyframes slide-up {
+	from {
+		transform: translateY(100%);
+	}
+
+	to {
+		transform: translateY(0);
+	}
+}
+
+
+@media only screen and (max-width: 600px) {
+	.logo-container img {
+		width: 90px;
+		height: 90px;
+	}
+
+	.logo-container h1 {
+		font-size: 20px;
+	}
+
+	.buttons-container {
+		flex-direction: column;
+		align-items: center;
+
+	}
+
+	iframe {
+		width: 250px;
+		height: 100px;
+	}
+
+	.buttons-container a {
+		padding: 10px 70px;
+	}
+
+	nav {
+		top: 0;
+	}
+
+	nav a {
+		font-size: 10px;
+	}
+
+}
